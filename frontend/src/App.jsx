@@ -72,15 +72,15 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Lista de Adopciones</h1>
+      <h1>Lista de Evaluaciones</h1>
       <AdoptionList adoptions={adoptions} dogs={dogs} adopters={adopters} />
-      <h1>Disponibles para adopción</h1>
+      <h1>Evaluaciones</h1>
       <AvailableList dogs={dogs} adopters={adopters} />
-      <h1>Agregar nuevo perro</h1>
+      <h1>Crear Evaluacion</h1>
       <AddDogForm onDogSubmit={handleDogSubmit} />
-      <h1>Agregar nuevo adoptante</h1>
+      <h1>Agregar Preguntas</h1>
       <AddAdopterForm onAdopterSubmit={handleAdopterSubmit} />
-      <h1>Nueva Adopción</h1>
+      <h1>Asignar Preguntas a una Evaluacion </h1>
       <AdoptionForm dogs={dogs} adopters={adopters} onAdoptionSubmit={handleAdoptionSubmit} />
     </div>
   );
