@@ -14,14 +14,14 @@ const AdoptionForm = ({ dogs, adopters, onAdoptionSubmit }) => {
             setSelectedDog('');
             setSelectedAdopter('');
         } else {
-            console.error('Debe seleccionar un perro y un adoptante.');
+            console.error('Debe seleccionar una pregunta y una respuesta.');
         }
     };
 
     return (
         <form onSubmit={handleSubmit}>
             <select value={selectedDog} onChange={(e) => setSelectedDog(e.target.value)}>
-                <option value="">Selecciona un perro 🐶</option>
+                <option value="">Selecciona un pregunta ¿?</option>
                 {dogs.map((dog) => (
                     <option key={dog.id} value={dog.id}>
                         🐶 {dog.name}
@@ -29,14 +29,14 @@ const AdoptionForm = ({ dogs, adopters, onAdoptionSubmit }) => {
                 ))}
             </select>
             <select value={selectedAdopter} onChange={(e) => setSelectedAdopter(e.target.value)}>
-                <option value="">Selecciona un adoptante 👤</option>
+                <option value="">Selecciona una Respuesta👤</option>
                 {adopters.map((adopter) => (
                     <option key={adopter.id} value={adopter.id}>
                         👤 {adopter.name}
                     </option>
                 ))}
             </select>
-            <button type="submit">Adoptar</button>
+            <button type="submit">Asignar</button>
         </form>
     );
 };

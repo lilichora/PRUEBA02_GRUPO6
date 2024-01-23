@@ -14,8 +14,8 @@ function AdoptionList({ adoptions, dogs, adopters }) {
                 const adopter = adopters.find((adopter) => adopter.id === Number(adoption.adopterId));
                 return (
                     <li key={adoption.id}>
-                        {dog && `🐶 Perro: ${dog.name}, `}
-                        {adopter && `👤 Adoptante: ${adopter.name}`}
+                        {dog && `¿? Pregunta: ${dog.name}, `}
+                        {adopter && `👤 Respuesta: ${adopter.name}`}
                     </li>
                 );
             })}
