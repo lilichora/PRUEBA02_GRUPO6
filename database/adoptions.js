@@ -6,15 +6,12 @@ module.exports = [
   },
   {
     "id": 2,
-    "dogId": "1",
+    "dogId": "2",
     "adopterId": "2"
   },
   {
     "id": 3,
-    "dogId": "1",
-    "adopterId": "2"
-  },
-  {
-    
+    "dogId": "3",
+    "adopterId": "3"
   }
 ];
