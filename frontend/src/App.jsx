@@ -52,12 +52,12 @@ const App = () => {
         setAdoptions((prevAdoptions) => [...prevAdoptions, newAdoption]);
 
         // Mostrar una alerta con los datos de la nueva adopción
-        alert(`¡Adopción realizada con éxito!\nID: ${newAdoption.id}\nPerro: ${newAdoption.dogId}\nAdoptante: ${newAdoption.adopterId}`);
+        alert(`¡Adopción realizada con éxito!\nID: ${newAdoption.id}\nPregunta: ${newAdoption.dogId}\nRespuestas: ${newAdoption.adopterId}`);
       } else {
-        throw new Error('Error al enviar la solicitud de adopción.');
+        throw new Error('Error al enviar la solicitud de Evaluacion.');
       }
     } catch (error) {
-      console.error('Error en la solicitud de adopción:', error.message);
+      console.error('Error en la solicitud de la Evaluacion:', error.message);
       throw error;
     }
   };
@@ -72,7 +72,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Evaluaciones</h1>
+      <h1>Evaluacion</h1>
       <AdoptionList adoptions={adoptions} dogs={dogs} adopters={adopters} />
       <h1>Cuestionario</h1>
       <AvailableList dogs={dogs} adopters={adopters} />

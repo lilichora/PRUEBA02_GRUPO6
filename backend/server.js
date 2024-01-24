@@ -71,7 +71,7 @@ app.post('/adoptions', (req, res) => {
 
         res.json(newAdoption);
     } catch (error) {
-        console.error('Error en POST /adoptions:', error.message);
+        console.error('Error en POST /respuestas:', error.message);
         res.status(500).json({ error: error.message });
     }
 });

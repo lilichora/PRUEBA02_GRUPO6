@@ -24,7 +24,7 @@ const AdoptionForm = ({ dogs, adopters, onAdoptionSubmit }) => {
                 <option value="">Selecciona un pregunta ¿?</option>
                 {dogs.map((dog) => (
                     <option key={dog.id} value={dog.id}>
-                        🐶 {dog.name}
+                         {dog.name}
                     </option>
                 ))}
             </select>
