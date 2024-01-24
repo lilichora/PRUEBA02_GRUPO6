@@ -31,8 +31,31 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  color: #333; /* Cambia el color del texto según tu preferencia */
+    border-bottom: 2px solid #ccc; /* Añade un borde inferior a los títulos h1 */
+    padding-bottom: 10px; /* Espaciado en la parte inferior del título h1 */
+    margin-bottom: 20px; /* Espaciado en la parte inferior de cada sección */
+ 
+}
+
+.App {
+  background-color: #94e5f0; /* Cambia el color de fondo según tu preferencia */
+  padding: 20px; /* Añade algún espacio interno para mejorar la apariencia */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Asegura que el contenedor sea al menos del alto de la ventana */
+
+
+  /* Estilo para las cajas de texto dentro de .App */
+  input {
+    width: 100%; /* Hace que el ancho del campo de texto sea del 100% del contenedor */
+    padding: 10px; /* Añade un espacio interno para mejorar la apariencia */
+    margin-bottom: 10px; /* Espaciado en la parte inferior de cada campo de texto */
+    border: 1px solid #ccc; /* Añade un borde alrededor de los campos de texto */
+    border-radius: 5px; /* Agrega bordes redondeados */
+  }
 }
 
 button {

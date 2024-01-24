@@ -71,7 +71,7 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="App" >
       <h1>Evaluacion</h1>
       <AdoptionList adoptions={adoptions} dogs={dogs} adopters={adopters} />
       <h1>Cuestionario</h1>
